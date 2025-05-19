@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Form</title>
+  </head>
+  <body>
+    <h1>Reservation Web Form</h1>
+    <form action="https://httpbin.org/post" method="post">
+      <div class="required">
+        <label for="first-name">First Name:</label><br />
+        <input
+          id="f-name"
+          name="f-name"
+          type="text"
+          placeholder="John"
+          required
+        /><br /><br />
+
+        <label for="last-name">Last Name:</label><br />
+        <input
+          id="l-name"
+          name="l-name"
+          type="text"
+          placeholder="Doe"
+          required
+        /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="email@email.com"
+          required
+        /><br /><br />
+
+        <label for="phone">Phone Number:</label><br />
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="1234567890"
+          required
+        /><br /><br />
+
+        <label for="start-date">Start Date:</label><br />
+        <input
+          id="s-date"
+          name="s-date"
+          type="date"
+          required
+        /><br /><br />
+
+        <label for="end-date">End Date:</label><br />
+        <input
+          id="s-date"
+          name="s-date"
+          type="date"
+          required
+        />
+      </div>
+      <div class="optional">
+        <label for="null"><br />Options:<br /></label>
+        <input
+          name="options"
+          id="rental-car"
+          type="checkbox"
+          value="rental-car"
+        />
+        <label for="rental-car">Rental Car<br /></label>
+
+        <input
+          name="options"
+          id="hotel"
+          type="checkbox"
+          value="hotel"
+        />
+        <label for="hotel">Hotel<br /></label>
+
+        <input
+          name="options"
+          id="other"
+          type="checkbox"
+          value="other"
+        />
+        <label for="other">Other<br /><br /></label>
+
+        <div class="accommodations">
+          <label for="accommodation">Do you need disability accommodations?</label><br />
+
+          <input name="yes" id="yes" type="radio" value="yes">
+          <label for="yes">Yes</label>
+
+          <input name="no" id="no" type="radio" value="no">
+          <label for="no">No</label>
+        </div>
+
+        <select name="accomodation-type" id="accommodation-type">
+          <option value="">What accommodation do you need?</option>
+          <option value="accessibles">Accessible Doorways/Bathrooms</option>
+          <option value="telephones">TDD/TTY Telephones</option>
+        </select>
+
+        <div class="additional-info-field">
+          <label for="additional-info"><br />Please provide additional information for your reservation:<br /></label>
+          <textarea name="additional-info" id="additional-info" rows="10">type additional information here</textarea>
+        </div>
+
+        <br />
+
+        <div class="submit-button">
+          <button>Book my Reservation</button>
+        </div>
+    </form>
+  </body>
+</html>
